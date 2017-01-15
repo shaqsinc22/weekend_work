@@ -3,7 +3,14 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
-
+  list = string.chars
+  counter = string.length - 1
+  new_list = []
+  list.each do
+    new_list.push(list[counter])
+    counter = counter - 1
+  end
+  return new_list * ""
 end
 
 # Driver code - don't touch anything below this line.
